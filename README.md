@@ -76,8 +76,7 @@ BeatBoxStudio/
 ## 📸 Demo
 
 **Live Demo:**  
-https://beatbox-studio.netlify.app/
----
+https://beatboxxstudio.netlify.app/
 
 ## 👩‍💻 Author
 
