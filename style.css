@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4F46E5,#7C3AED,#2563EB);
+    padding:30px;
+}
+
+.container{
+    width:100%;
+    max-width:1100px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+    border-radius:25px;
+    padding:40px;
+    color:white;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.container p{
+    text-align:center;
+    opacity:.9;
+    margin-bottom:30px;
+}
+
+.volume-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-bottom:35px;
+}
+
+.volume-box label{
+    font-size:18px;
+    font-weight:600;
+}
+
+#volume{
+    width:250px;
+}
+
+.sound-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.sound-btn{
+    padding:25px;
+    border:none;
+    border-radius:18px;
+    background:white;
+    color:#333;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.sound-btn:hover{
+    transform:translateY(-6px) scale(1.04);
+    background:#EEF2FF;
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+.sound-btn:active{
+    transform:scale(.95);
+}
+
+#stopBtn{
+    margin-top:35px;
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:18px;
+    background:#EF4444;
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#stopBtn:hover{
+    background:#DC2626;
+}
+
+@media(max-width:900px){
+
+.sound-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+@media(max-width:700px){
+
+.sound-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+#volume{
+
+width:170px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.sound-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.container{
+
+padding:25px;
+
+}
+
+h1{
+
+font-size:32px;
+
+}
+
+}
